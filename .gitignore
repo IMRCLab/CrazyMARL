@@ -24,8 +24,14 @@ models/
 *.mp4
 *.tflite
 
-# !experiments_data/**/*.png
-# !experiments_data/**/*.mp4
-# !experiments_data/**/*.tflite
-# !experiments_data/**/*.asdf
+# Allow website assets in static/
+!static/images/**/*.png
+!static/images/**/*.jpg
+!static/images/**/*.jpeg
+!static/images/**/*.gif
+!static/images/**/*.webp
+!static/images/**/*.ico
+
+# Ignore source image folders
+/images/
 jit_*

@@ -211,91 +211,39 @@
     <i class="fas fa-chevron-up"></i>
   </button>
 
-  <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-
   <main id="main-content">
-  <section class="hero">
-    <div class="hero-body">
+  <section class="hero" style="padding-bottom:0;">
+    <div class="hero-body" style="padding-bottom:1rem;">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">CrazyMARL: Decentralized Direct Motor Control Policies for Cooperative Aerial Transport of Cable-Suspended Payloads</h1>
+            <h1 class="title is-1 publication-title">CrazyMARL:<br>Decentralized Direct Motor Control Policies for Cooperative Aerial Transport of Cable-Suspended Payloads</h1>
             <div class="is-size-5 publication-authors">
-              <!-- TODO: Replace with your paper authors and their personal links -->
               <span class="author-block">
-                <a href="mailto:viktor.lorentz@hhi.fraunhofer.de" target="_blank">Viktor Lorentz</a><sup>1,2</sup>,</span>
+                <a href="mailto:viktor.lorentz@hhi.fraunhofer.de" target="_blank">Viktor Lorentz</a><sup>1</sup>,</span>
                 <span class="author-block">
-                  <a href="https://github.com/IMRCLab" target="_blank">Khaled Wahba</a><sup>1</sup>,</span>
+                  <a href="mailto:k.wahba@tu-berlin.de">Khaled Wahba</a><sup>1</sup>,</span>
                   <span class="author-block">
-                    <a href="https://github.com/IMRCLab" target="_blank">Sayantan Auddy</a><sup>1</sup>,</span>
+                  <a href="mailto:auddy@tu-berlin.de">Sayantan Auddy</a><sup>1</sup>,</span>
                   <span class="author-block">
-                    <a href="https://github.com/IMRCLab" target="_blank">Marc Toussaint</a><sup>1,3</sup>,</span>
+                    <a href="mailto:toussaint@tu-berlin.de">Marc Toussaint</a><sup>1,2</sup>,</span>
                   <span class="author-block">
-                    <a href="https://github.com/IMRCLab" target="_blank">Wolfgang Hönig</a><sup>1,3</sup>
+                    <a href="mailto:hoenig@tu-berlin.de">Wolfgang Hönig</a><sup>1,2</sup>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
                     <span class="author-block">
                       <sup>1</sup>Technische Universität Berlin, Berlin, Germany<br>
-                      <sup>2</sup>Fraunhofer Heinrich-Hertz-Institut, Berlin, Germany<br>
-                      <sup>3</sup>Robotics Institute Germany (RIG), Germany<br>
-                      Corresponding author: <a href="mailto:viktor.lorentz@hhi.fraunhofer.de">viktor.lorentz@hhi.fraunhofer.de</a>
+                      <sup>2</sup>Robotics Institute Germany (RIG), Germany
                     </span>
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
                       <span class="link-block">
-                        <a href="static/pdfs/paper.pdf" target="_blank"
+                        <a href="https://arxiv.org/abs/2509.14126" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -304,18 +252,6 @@
                       </a>
                     </span>
 
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- TODO: Replace with your GitHub repository URL -->
                   <span class="link-block">
                     <a href="https://github.com/IMRCLab/crazyMARL" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
@@ -326,9 +262,8 @@
                   </a>
                 </span>
 
-                <!-- TODO: Update with your arXiv paper ID -->
                 <span class="link-block">
-                  <a href="https://github.com/IMRCLab/crazyMARL" target="_blank"
+                  <a href="https://www.youtube.com/watch?v=0gBlbA2pX4g" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="fas fa-video"></i>
@@ -345,23 +280,20 @@
 </section>
 
 
-<!-- Teaser video-->
+<!-- Teaser image -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Training in MuJoCo with end-to-end JAX and domain randomization enables decentralized IPPO policies to output direct PWM at 250 Hz on Crazyflie 2.1, achieving robust recovery from harsh pushes and wind during cooperative cable-suspended payload transport.
+      <figure class="image">
+        <img src="static/images/figs/crazymarl_schematic.jpg" alt="CrazyMARL system schematic showing decentralized MARL architecture" loading="lazy"/>
+      </figure>
+      <h2 class="subtitle has-text-centered" style="font-size:0.9rem;">
+        Teaching drone teams to carry payloads together: zero communication, direct motor control, robust to wind and disturbances, with zero-shot transfer from simulation to real hardware.
       </h2>
     </div>
   </div>
 </section>
-<!-- End teaser video -->
+<!-- End teaser image -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -369,7 +301,7 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
+        <div class="content has-text-justified" style="font-size:0.85rem; line-height:1.5;">
           <!-- TODO: Replace with your paper abstract -->
           <p>
             Collaborative transportation of cable-suspended payloads by teams of Unmanned Aerial Vehicles (UAVs) has the potential to enhance payload capacity, adapt to different payload shapes, and provide built-in compliance, making it attractive for applications ranging from disaster relief to precision logistics. However, multi-UAV coordination under disturbances, nonlinear payload dynamics, and slack–taut cable modes remains a challenging control problem. To our knowledge, no prior work has addressed these cable mode transitions in the multi-UAV context, instead relying on simplifying rigid-link assumptions. We propose CrazyMARL, a decentralized Reinforcement Learning (RL) framework for multi-UAV cable-suspended payload transport. Simulation results demonstrate that the learned policies can outperform classical decentralized controllers in terms of disturbance rejection and tracking precision, achieving an 80% recovery rate from harsh conditions compared to 44% for the baseline method. We also achieve successful zero-shot sim-to-real transfer and demonstrate that our policies are highly robust under harsh conditions, including wind, random external disturbances, and transitions between slack and taut cable dynamics. This work paves the way for autonomous, resilient UAV teams capable of executing complex payload missions in unstructured environments. Code and videos can be found on the website: https://github.com/IMRCLab/crazyMARL.
@@ -381,123 +313,141 @@
 </section>
 <!-- End paper abstract -->
 
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
+<!-- Video -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Video</h2>
+    <div class="publication-video">
+      <iframe src="https://www.youtube.com/embed/0gBlbA2pX4g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen title="CrazyMARL video"></iframe>
     </div>
   </div>
-</div>
-</div>
 </section>
-<!-- End image carousel -->
+<!-- End video -->
 
 
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
+<!-- Method -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Method</h2>
+    <div class="columns is-variable is-5">
+      <div class="column">
+        <div class="contrib-card">
+          <h2 class="title is-4">RL Formulation</h2>
+          <ul class="poster-list">
+            <li><strong>Algorithm:</strong> Independent PPO (IPPO) with shared parameters across agents.</li>
+            <li><strong>Observations:</strong> Payload position/velocity error, relative poses, teammate positions, previous actions.</li>
+            <li><strong>Actions:</strong> Normalized values mapped directly to motor PWM at 250 Hz.</li>
+            <li><strong>Reward:</strong> <em>r = r<sub>track</sub> · r<sub>stable</sub> + r<sub>safe</sub></em>
+              <ul class="poster-list nested">
+                <li><strong>Track:</strong> Guides payload position and velocity towards goal.</li>
+                <li><strong>Stable:</strong> Velocity caps, swing limits, vertical alignment, taut cables.</li>
+                <li><strong>Safe:</strong> Collision penalties and action smoothness.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="column">
+        <div class="contrib-card">
+          <h2 class="title is-4">Training &amp; Domain Randomization</h2>
+          <ul class="poster-list">
+            <li><strong>Simulator:</strong> MuJoCo MJX with accurate slack–taut cable dynamics and end-to-end JAX training.</li>
+            <li><strong>Scale:</strong> 16,384 parallel environments on GPU for high-throughput rollouts.</li>
+            <li><strong>Randomization:</strong> Motor parameters, actuation lag, sensor offsets, and payload properties varied each episode.</li>
+            <li><strong>Harsh Initializations:</strong> Ground and air starts with random velocities, orientations, formations, and slack cables.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="column">
+        <div class="contrib-card">
+          <h2 class="title is-4">Core Contributions</h2>
+          <ul class="poster-list">
+            <li><strong>Decentralized MARL:</strong> Independent execution with no inter-robot communication at runtime.</li>
+            <li><strong>Direct Motor PWM:</strong> No cascaded controllers — policies operate near actuation limits.</li>
+            <li><strong>Slack–Taut Cables:</strong> First multi-UAV work to handle cable mode transitions without rigid-link assumptions.</li>
+            <li><strong>Zero-Shot Sim-to-Real:</strong> Policies transfer directly to Crazyflie 2.1 under 3.5 m/s wind.</li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
 
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
+<!-- Simulation Results -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Simulation Results</h2>
+    <div class="columns is-variable is-4">
+      <div class="column">
+        <div class="result-card">
+          <div class="result-title">Baseline Comparison</div>
+          <figure class="image">
+            <img src="static/images/experiments/baseline_recovery.png" alt="Baseline comparison — recovery trajectories" loading="lazy"/>
+          </figure>
+          <ul class="poster-list">
+            <li>Recovery trajectories: CrazyMARL vs. classical decentralized baseline.</li>
+            <li><strong>79.7% recovery rate</strong> vs. 43.5% for the baseline.</li>
+          </ul>
         </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
+      </div>
+      <div class="column">
+        <div class="result-card">
+          <div class="result-title">Generalization</div>
+          <figure class="image">
+            <img src="static/images/experiments/generalization.png" alt="Generalization results across cable length, mass, and noise" loading="lazy"/>
+          </figure>
+          <ul class="poster-list">
+            <li>Robust success across varying cable lengths, payload masses, and sensor noise levels.</li>
+          </ul>
         </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
+      </div>
+      <div class="column">
+        <div class="result-card">
+          <div class="result-title">Scalability</div>
+          <figure class="image">
+            <img src="static/images/figs/fig8_scale.png" alt="Scalability with 1, 2, and 3 quadrotors" loading="lazy"/>
+          </figure>
+          <ul class="poster-list">
+            <li>Fig-8 tracking with <strong>1, 2, and 3 quadrotors</strong> using the same shared policy.</li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End video carousel -->
 
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
+<!-- Real-World Results -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Real-World Results</h2>
+    <div class="columns is-variable is-4">
+      <div class="column">
+        <div class="result-card">
+          <div class="result-title">Trajectory Tracking</div>
+          <figure class="image">
+            <img src="static/images/figs/fig8.png" alt="Figure-eight trajectory tracking in real world" loading="lazy"/>
+          </figure>
+          <ul class="poster-list">
+            <li>Zero-shot sim-to-real fig-eight trajectory tracking.</li>
+            <li>Stable under <strong>3.5 m/s wind</strong>.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="column">
+        <div class="result-card">
+          <div class="result-title">Takeoff &amp; Hover</div>
+          <figure class="image">
+            <img src="static/images/experiments/22-2-takeoff_takeoff_land_plot.png" alt="Agile takeoff and hover with payload" loading="lazy"/>
+          </figure>
+          <ul class="poster-list">
+            <li><strong>Agile takeoff:</strong> 0 to 1 m in 2.5 s.</li>
+            <li><strong>0.079 m RMSE in wind</strong> (vs. 0.064 m without).</li>
+          </ul>
+        </div>
       </div>
     </div>
-  </section>
-<!--End paper poster -->
+  </div>
+</section>
 
 
 
@@ -511,12 +461,12 @@
           <span class="copy-text">Copy</span>
         </button>
       </div>
-      <pre id="bibtex-code"><code>@article{CrazyMARL2026,
+      <pre id="bibtex-code"><code>@inproceedings{lorentz2026crazymarl,
   title={CrazyMARL: Decentralized Direct Motor Control Policies for Cooperative Aerial Transport of Cable-Suspended Payloads},
-  author={Lorentz, Viktor and Wahba, Khaled and Auddy, Sayantan and Toussaint, Marc and Hönig, Wolfgang},
-  journal={ICRA 2026},
+  author={Lorentz, Viktor and Wahba, Khaled and Auddy, Sayantan and Toussaint, Marc and H{\"o}nig, Wolfgang},
+  booktitle={IEEE International Conference on Robotics and Automation (ICRA)},
   year={2026},
-  url={https://github.com/IMRCLab/crazyMARL}
+  url={https://arxiv.org/abs/2509.14126}
 }</code></pre>
     </div>
 </section>

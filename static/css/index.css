@@ -104,7 +104,7 @@ body {
 }
 
 .teaser .hero-body {
-  padding-top: 2rem;
+  padding-top: 0;
   padding-bottom: 4rem;
 }
 
@@ -117,6 +117,7 @@ body {
 .publication-title {
     font-family: 'Inter', sans-serif !important;
     font-weight: 800 !important;
+    font-size: 2.2rem !important;
     color: var(--text-primary) !important;
     margin-bottom: 2rem !important;
     line-height: 1.1 !important;
@@ -332,13 +333,108 @@ body {
 
 /* Content Improvements */
 .content.has-text-justified {
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   line-height: 1.8;
   color: var(--text-secondary);
 }
 
 .content.has-text-justified p {
   margin-bottom: 1.5rem;
+}
+
+/* Poster-style bullet lists */
+.poster-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.poster-list li {
+  position: relative;
+  padding-left: 1.3em;
+  margin-bottom: 0.55em;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+.poster-list li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-size: 0.85em;
+  top: 0.15em;
+}
+.poster-list li strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+.poster-list.nested {
+  margin-top: 0.35em;
+  margin-left: 0.4em;
+}
+.poster-list.nested li::before {
+  content: '–';
+  font-size: 0.9em;
+  top: 0;
+  color: var(--text-light);
+}
+
+/* Result cards */
+.result-card {
+  background: var(--background-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 1.25rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+.result-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+.result-card .result-title {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.85rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.result-card figure {
+  margin-bottom: 0.85rem;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+.result-card figure img {
+  border-radius: var(--border-radius);
+}
+.result-card .poster-list {
+  margin-top: auto;
+}
+
+/* Contributions section cards */
+.contrib-card {
+  background: var(--background-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 1.5rem 1.75rem;
+  height: 100%;
+  box-shadow: var(--shadow-sm);
+}
+.contrib-card h2.title {
+  font-size: 0.875rem !important;
+  font-weight: 700 !important;
+  color: var(--primary-color) !important;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem !important;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--border-color);
 }
 
 /* Footer Improvements */
@@ -609,7 +705,7 @@ code {
   }
   
   .publication-title {
-    font-size: 2.5rem !important;
+    font-size: 1.7rem !important;
     line-height: 1.2 !important;
     margin-bottom: 1.5rem !important;
   }
@@ -658,7 +754,7 @@ code {
 
 @media screen and (max-width: 480px) {
   .publication-title {
-    font-size: 2rem !important;
+    font-size: 1.4rem !important;
   }
   
   .hero-body {
